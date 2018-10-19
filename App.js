@@ -34,14 +34,14 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Lyric-ify</Text>
+        <Text style={styles.header}>NativeLyrics</Text>
         <Text style={styles.label}>Artist</Text>
         <TextInput
           value={artist}
           style={styles.input}
           onChangeText={ (text) => this.setState({ artist: text }) }
         />
-        <Text style={styles.label}>Song Title</Text>
+        <Text style={styles.label}>Track Title</Text>
         <TextInput
           value={title}
           style={styles.input}
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   input: {
     height: 50,
     fontSize: 25,
-    borderColor: 'grey',
+    borderColor: 'tan',
     borderWidth: 1,
     margin: 5,
     backgroundColor: '#FFF',
